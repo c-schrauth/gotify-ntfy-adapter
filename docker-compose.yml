@@ -1,5 +1,9 @@
 services:
   gotify-ntfy-adapter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      
     image: gotify-ntfy-adapter:local
     
     container_name: gotify-ntfy-adapter
