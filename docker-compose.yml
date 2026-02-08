@@ -18,10 +18,6 @@ services:
     volumes:
       - gotify-notify-adapter_secrets:/run/secrets:ro
 
-    secrets:
-      - ntfy_password
-      - token_topic_map
-
 volumes:
   gotify-notify-adapter_secrets:
     external: true
