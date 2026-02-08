@@ -16,9 +16,7 @@ services:
       - stack.env
 
     volumes:
-      - gotify-notify-adapter_secrets/ntfy_password:/run/secrets/ntfy_password:ro
-      - gotify-notify-adapter_secrets/token_topic_map.json:/run/secrets/token_topic_map:ro
-
+      - gotify-notify-adapter_secrets:/run/secrets:ro
 
     secrets:
       - ntfy_password
