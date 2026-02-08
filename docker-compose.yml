@@ -18,6 +18,13 @@ services:
     volumes:
       - gotify-notify-adapter_secrets:/run/secrets:ro
 
+    networks:
+      - ntfy_default
+
 volumes:
   gotify-notify-adapter_secrets:
+    external: true
+
+networks:
+  ntfy_default:
     external: true
