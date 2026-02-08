@@ -22,12 +22,6 @@ services:
       - ntfy_password
       - token_topic_map
 
-secrets:
-  ntfy_password:
-    external: true
-  token_topic_map:
-    external: true
-
 volumes:
   gotify-notify-adapter_secrets:
     external: true
